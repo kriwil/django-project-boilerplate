@@ -162,6 +162,11 @@ LOGGING = {
     }
 }
 
+# automatically using future url
+# no need to load url from future anymore in template
+import django.template
+django.template.add_to_builtins('django.templatetags.future')
+
 try:
     from local_settings import *
 except ImportError:
