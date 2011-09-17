@@ -1,7 +1,11 @@
 # Django settings for PROJECT_NAME project.
 import os
+import sys
+
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
+
+sys.path.append(os.path.join(PROJECT_PATH, 'apps'))
 
 DEBUG = True
 TEMPLATE_DEBUG = True
@@ -164,8 +168,8 @@ LOGGING = {
 
 # automatically using future url
 # no need to load url from future anymore in template
-import django.template
-django.template.add_to_builtins('django.templatetags.future')
+#import django.template
+#django.template.add_to_builtins('django.templatetags.future')
 
 try:
     from local_settings import *
