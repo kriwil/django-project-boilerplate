@@ -166,6 +166,8 @@ LOGGING = {
     }
 }
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 # automatically using future url
 # no need to load url from future anymore in template
 #import django.template
