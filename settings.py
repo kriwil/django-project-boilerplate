@@ -168,6 +168,11 @@ LOGGING = {
 
 INTERNAL_IPS = ('127.0.0.1',)
 
+# TEST
+BASE_PATH = os.path.dirname(os.path.dirname(__file__))
+TEST_DISCOVERY_ROOT = os.path.join(BASE_PATH, "tests")
+TEST_RUNNER = "tests.runner.DiscoveryRunner"
+
 # automatically using future url
 # no need to load url from future anymore in template
 #import django.template
