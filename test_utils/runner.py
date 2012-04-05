@@ -23,7 +23,7 @@ from django.utils.importlib import import_module
 from django.utils.unittest.loader import defaultTestLoader
 
 
-class DiscoveryDjangoTestSuiteRunner(DjangoTestSuiteRunner):
+class DiscoveryRunner(DjangoTestSuiteRunner):
     """A test suite runner that uses unittest2 test discovery."""
     def build_suite(self, test_labels, extra_tests=None, **kwargs):
         suite = None
