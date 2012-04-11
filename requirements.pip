@@ -1,2 +1,2 @@
-django
-mock
+Django==1.4
+mock==0.8.0
