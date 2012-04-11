@@ -14,8 +14,10 @@ DATABASES = {
     }
 }
 
+MEDIA_ROOT = BASE_PATH + '/media/'
+STATIC_ROOT = BASE_PATH + '/static/'
+
 # TEST
-BASE_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 TEST_DISCOVERY_ROOT = os.path.join(BASE_PATH, "tests")
 TEST_RUNNER = "tests.runner.DiscoveryRunner"
 
