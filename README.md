@@ -1,7 +1,7 @@
-django-project-bootstrap
-========================
+django-project-boilerplate
+==========================
 
-This is my personal django project boostrap.
+This is my personal django project boilerplate.
 
 * uses django 1.4
 * custom test root dir and runner ([http://carljm.github.com/django-testing-slides/]())
